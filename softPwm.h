@@ -30,6 +30,12 @@ extern "C" {
 extern int  softPwmCreate (int pin, int value, int range) ;
 extern void softPwmWrite  (int pin, int value) ;
 extern void softPwmStop   (int pin) ;
+extern void digitalWrite (int pin, int value) ;
+extern unsigned int micros (void) ;
+extern void delayMicroseconds (unsigned int howLong) ;
+extern void delayMicrosecondsHard (unsigned int howLong) ;
+extern void delay (unsigned int howLong);
+extern unsigned int millis (void) ;
 
 #ifdef __cplusplus
 }
